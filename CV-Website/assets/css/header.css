@@ -1,0 +1,164 @@
+/* Reset default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header Styling */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    
+}
+
+.logo h1 {
+    font-size: 24px;
+}
+
+.logo span {
+    color: #4a90e2;
+}
+
+#page-logo{
+    text-decoration: none;
+    color: #000000;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+nav ul li a:hover {
+    color: #4a90e2;
+}
+
+.cta button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.cta button:hover {
+    background-color: #4a90e2;
+}
+
+/* Hamburger Menu Styling */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.hamburger .line {
+    width: 25px;
+    height: 3px;
+    background-color: #333;
+    margin: 4px 0;
+}
+
+/* Main Content Styling */
+main {
+    padding: 20px;
+}
+
+.intro {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.profile {
+    text-align: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: row;
+}
+
+.profile img {
+    border-radius: 50%;
+    width: 150px;
+    margin-bottom: 15px;
+}
+
+.profile h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+
+/* Responsiveness */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 200px;
+        background-color: #fff;
+        border: 1px solid #eee;
+        border-radius: 10px;
+        display: none;
+        text-align: center; /* Center text inside ul */
+    }
+
+    nav ul.active {
+        display: flex;
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+        width: 100%; /* Make li take the full width */
+        text-align: center; /* Center text inside li */
+    }
+
+    .hamburger {
+        display: flex;
+    }
+    .cta{
+        display: flex;
+    }
+    .logo{
+        width: 50%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .logo a{
+        width: auto;
+    }
+    .logo h1{
+        font-size: 20px;
+    }
+    .logo span{
+        font-size: 20px;
+    }
+}
+
+
+

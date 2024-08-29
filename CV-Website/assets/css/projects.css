@@ -1,0 +1,176 @@
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+p{
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    text-indent: 2em;
+}
+.no-indent{
+    text-indent: 0;
+}
+.middle {
+    margin-top: 60px;
+    margin-bottom: 60px;
+    align-content: center;
+    justify-content: center;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    text-align: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding-left: 60px;
+    padding-right: 60px;
+}
+
+.description-header{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 15px;
+    align-self: center;
+}
+.description-header img{
+    border-radius: 15%;
+    width: auto;
+    height: 400px;
+    margin-right: 2%;
+    margin-left: 2%;
+    display: flex;
+    align-self: center;
+}
+
+.description-text{
+    display: flex;
+    flex-direction: column;
+    width:100%;
+    
+}
+
+.description-text h2{
+    font-size: 40px;
+    justify-self: center;
+}
+
+.description-text hr{
+    margin-bottom: 15px;
+}
+
+
+.description-text p{
+    text-align: left;
+    font-size: large;
+}
+.description-content{
+    display: flex;
+    flex-direction: row;
+    margin-left: 15px;
+}
+.text{
+    display: flex;
+    flex-direction: column;
+}
+.description-content p{
+    text-align: left;
+    font-size: large;
+}
+.description-content img{
+    height:300px;
+    width: auto;
+    border-radius: 15%;
+    margin-right: 2%;
+    margin-left: 2%;
+}
+
+.accordion-body li{
+    text-align: left;
+}
+
+/* .accordion-item{
+    width: 80%;
+} */
+
+.accordion-images{
+    margin-right:50px;
+}
+
+#mango-logo{
+    margin-right:100px;
+}
+#kultur-logo{
+    margin-right:100px;
+}
+.accordion-item #bpgo{
+    width: 200px;
+    margin: 0px;
+}
+
+@media (max-width: 768px) {
+    .middle{
+        width: 100%;
+        margin-top: 0px;
+        padding: 15px;
+    }
+    .accordion-images{
+        margin-right:0px;
+        width: 50%;
+    }
+    #mango-logo{
+        margin-right:5px;
+        width: 50%;
+    }
+    #kultur-logo{
+        margin-right:5px;
+        width: 20%;
+    }
+    
+    .accordion-button collapsed{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        height: 300px;
+    }
+    .description-text h2{
+        font-size: 24px;
+        justify-self: center;
+    }
+    .description-text{
+        width: 100%;
+    }
+    #bpgo{
+        width: 20%;
+    }
+    .accordion-button .empty-p{
+        margin: 0;
+        padding: 0;
+        font-size: inherit; 
+        line-height: inherit; 
+        font-weight: inherit; 
+        color: inherit; 
+        text-align: inherit;
+        font-family: sans-serif;
+        text-indent: 0%;
+        display: none;
+    }
+    .accordion-item .accordion-body .title-p {
+        display: flex !important; /* Ensure it's visible */
+        margin: 0px;
+        text-indent: 0%;
+    }
+    #mango-logo{
+        margin-right:0px;
+        width: 50%;
+    }
+    #kultur-logo{
+        margin-right:0px;
+        width: 50%;
+    }
+    .accordion-item #bpgo{
+        width: 70%
+    }
+}

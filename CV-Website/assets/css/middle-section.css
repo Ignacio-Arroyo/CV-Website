@@ -1,0 +1,375 @@
+#middle {
+    margin-top: 60px;
+   
+    margin-bottom: 60px;
+    align-content: center;
+}
+/*profile box*/
+.profile-box {
+    text-align: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 520px;
+    display: flex;
+    flex-direction: row;
+    margin-right: 15px;
+}
+
+.profile-box img {
+    border-radius: 25%;
+    width: 250px;
+    margin-bottom: 15px;
+}
+
+#profile-text{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-left: 5px;
+    margin-right: 5px;
+    padding: auto;
+    justify-content: center; 
+    align-items: center;
+}
+
+#profile-text h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    text-align: left;
+}
+#profile-text p {
+    color: #7e7e7e;
+}
+
+/*Grids*/
+#grid-lvl1{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 15px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#grid-lvl1-1{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+#grid-lvl1-2{
+    display: flex;
+    flex-direction: row;
+}
+/*studies box*/
+.studies-box {
+    text-align: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 15px;
+}
+
+.studies-box img {
+    border-radius: 25%;
+    width: 250px;
+    height: 200px;
+    align-self: center;
+    margin-bottom: 5px;
+}
+
+
+/*projects box*/
+.projects-box {
+    text-align: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+.projects-box img {
+    border-radius: 25%;
+    width: 200px;
+    height: 200px;
+    align-self: center;
+    margin-bottom: 5px;
+}
+
+/*passions box*/
+.passions-box {
+    text-align: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 615px;
+    height: 120px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-right: 15px;
+    align-items: center;
+}
+
+.passions-box img{
+    width: 100px;
+    height: 100px;
+}
+.passions-box h2{
+    
+    font-size: 20px;
+    font-weight: 700;
+}
+
+/*Grid lvl2*/
+#grid-lvl2{
+    display: flex;
+    flex-direction: row;
+    height: auto;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/*exp box*/
+.exp-box {
+    text-align: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 815px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-right: 15px;
+    align-items: center;
+}
+
+.exp-box img{
+    width: 23%;
+    height: 100%;
+}
+
+#exp-images{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+
+}
+
+#bpgo{
+    width: 330px;
+}
+
+/*langues box*/
+.langues-box {
+    text-align: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 320px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-right: 15px;
+    align-items: center;
+}
+
+.langues-box img{
+    width: 100px;
+    height: 100px;
+}
+
+/*language designed bars*/
+.language-bar {
+    width: 300px; /* Adjust width as needed */
+    background-color: #e0e0e0; /* Background color for empty bar */
+    border-radius: 25px;
+    margin: 10px 0;
+    position: relative;
+    height: 20px;
+    overflow: hidden;
+}
+
+.language-bar span {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.language-bar-fill {
+    height: 100%;
+    border-radius: 25px;
+    text-align: right;
+    line-height: 30px; /* Align text vertically within the bar */
+    color: white;
+    padding-right: 10px;
+    box-sizing: border-box;
+}
+
+.spanish {
+    width: 100%; /* Example proficiency level */
+    background-color: #ff5733; /* Color for this language */
+}
+
+.english {
+    width: 100%;
+    background-color: #4285f4;
+}
+
+.french {
+    width: 100%;
+    background-color: #ff9800;
+}
+
+.german {
+    width: 80%;
+    background-color: #8bc34a;
+}
+
+.italian {
+    width: 60%;
+    background-color: #df62f5;
+}
+
+/*interactive boxes*/
+.link-div {
+    text-decoration: none;
+}
+
+.link-div div div h2{
+    color: black;
+}
+.link-div div h2{
+    color: black;
+}
+
+
+
+@media (max-width: 768px) {
+    .profile-box{
+        flex-wrap: wrap;
+        justify-content: center;
+        width: min-content;
+        margin: 0;
+        margin-bottom: 15px;
+        width: 100%;
+    }
+    #profile-text h2{
+        text-align: center;
+    }
+    #middle{
+        margin:auto;
+        
+        display: flex;
+        flex-direction: column;
+    }
+
+    
+    #name-br{
+        display: none;
+    }
+    #grid-lvl1{
+        display: flex;
+        flex-direction: column;
+        
+        flex-wrap: wrap;
+    }
+    .studies-box{
+        width:auto;
+        margin: 0%;
+        margin-bottom: 15px;
+    }
+    .projects-box{
+        width:auto;
+        
+        margin-bottom: 15px;
+    }
+
+    #grid-lvl1-2{
+        display: flex;
+        flex-direction: column;
+    }
+    .passions-box{
+        display: flex;
+        flex-direction: column;
+        width:auto;
+        height: auto;
+        margin: 0%;
+    }
+    .passions-box h2{
+        writing-mode:horizontal-tb;
+        font-size: 24px;
+        margin-bottom: 15px;
+    }
+    .passions-box img{
+        width: 40%;
+        height: auto;
+        margin-bottom: 15px;
+    }
+    .link-div{
+        width: auto;
+        color: black;
+    }
+
+    #grid-lvl2{
+        display: flex;
+        flex-direction: column;
+    }
+    .exp-box{
+        display: flex;
+        flex-direction: column  ;
+        width:auto;
+        height: auto;
+        margin: 0%;
+        margin-bottom: 15px;
+        
+    }
+    
+    #exp-images{
+        display: flex;
+        flex-direction: column  ;
+        
+        justify-content: center;
+        align-items: center;
+    }
+    
+    #exp-images img{
+        width: 70%;
+        
+    }
+    
+    
+    .langues-box{
+        margin: 0%;
+        width:auto;
+        
+    }
+    .language-bar{
+        display: flex;
+        height: 30px;
+    }
+    
+    
+
+}

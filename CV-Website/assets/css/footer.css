@@ -1,0 +1,84 @@
+.footer {
+    background-color: #1a1a1a;
+    color: #f5f5f5;
+    padding: 40px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.footer h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.footer p {
+    font-size: 16px;
+    margin-bottom: 30px;
+    color: #999;
+}
+
+.footer .social-icons {
+    margin: auto;
+    margin-bottom: 30px;
+    width: 20%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.footer .social-icons a {
+    margin: 0 10px;
+    display: inline-block;
+}
+
+.footer .social-icons img {
+    width: 40px;
+    height: 40px;
+}
+
+.footer .contact-info {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.footer .contact-card {
+    background-color: #333;
+    padding: 20px;
+    border-radius: 8px;
+    width: 200px;
+    text-align: left;
+}
+
+.footer .contact-card img {
+    width: 30px;
+    height: 30px;
+    margin-bottom: 10px;
+}
+
+.footer .contact-card a {
+    display: block;
+    color: #f5f5f5;
+    font-size: 16px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.no-deco{
+    text-decoration: none;
+    color: inherit;
+    border: none;
+    background: none;
+    padding: 0;
+    margin: 0;
+    font-weight: normal;
+    font-style: normal;
+}
+
+@media (max-width: 768px) {
+    .footer .social-icons{
+        margin: 0px;
+        width: 300px;
+    }
+    
+}

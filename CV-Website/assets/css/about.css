@@ -1,0 +1,124 @@
+main{
+    display: flex;
+    justify-content: center;
+}
+p{
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    text-indent: 2em;
+}
+.no-indent{
+    text-indent: 0;
+}
+.middle {
+    margin-top: 60px;
+    margin-bottom: 60px;
+    align-content: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    text-align: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    
+}
+
+.description-header{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 15px;
+}
+.description-header img{
+    border-radius: 15%;
+    width: auto;
+    height: 400px;
+    margin-right: 2%;
+    margin-left: 2%;
+    display: flex;
+    align-self: center;
+}
+
+.description-text{
+    display: flex;
+    flex-direction: column;
+    width:100%;
+    margin-right: 15px;
+}
+
+.description-text h2{
+    font-size: 40px;
+    justify-self: center;
+}
+
+.description-text hr{
+    margin-bottom: 15px;
+}
+
+
+.description-text p{
+    text-align: left;
+    font-size: large;
+}
+.description-content{
+    display: flex;
+    flex-direction: row;
+    margin-left: 15px;
+}
+.text{
+    display: flex;
+    flex-direction: column;
+}
+.description-content p{
+    text-align: left;
+    font-size: large;
+}
+.description-content img{
+    height:300px;
+    width: auto;
+    border-radius: 15%;
+    margin-right: 2%;
+    margin-left: 2%;
+}
+
+@media (max-width: 768px) {
+    .middle{
+        width: 100%;
+        margin-top: 0px;
+    }
+    .description-header{
+        display: flex;
+        flex-direction: column;
+        margin: 0px;
+        
+        
+    }
+    .description-header hr{
+        display: none  ;
+        
+    }
+    .description-header img{
+        width: auto;
+        
+    }
+    
+    .description-header p{
+        margin: 15px;
+        margin-bottom: 0px;
+    }
+
+    .description-content{
+        display: flex;
+        flex-direction: column-reverse;
+        margin: 0px;
+    }
+    .description-content img{
+        height: auto;
+        width: 100%;
+        align-self: center;
+        margin-bottom: 15px;
+        
+    }
+}
