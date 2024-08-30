@@ -110,6 +110,12 @@ p{
     margin: 0px;
 }
 
+@media (max-width: 1250px) {
+    .middle{
+        width: auto;
+        flex-direction: column;    
+    }
+}
 @media (max-width: 768px) {
     .middle{
         width: 100%;

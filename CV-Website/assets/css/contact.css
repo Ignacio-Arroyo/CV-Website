@@ -64,7 +64,12 @@ p{
 .contact-form button:hover {
     background-color: #218838;
 }
-
+@media (max-width: 1250px) {
+    .middle{
+        width: 100%;
+           
+    }
+}
 @media (max-width: 768px) {
     .middle{
         width: 100%;

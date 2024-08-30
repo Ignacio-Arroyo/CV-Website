@@ -221,7 +221,7 @@
     height: 100%;
     border-radius: 25px;
     text-align: right;
-    line-height: 30px; /* Align text vertically within the bar */
+    line-height: 20px; /* Align text vertically within the bar */
     color: white;
     padding-right: 10px;
     box-sizing: border-box;
@@ -243,7 +243,7 @@
 }
 
 .german {
-    width: 80%;
+    width: 100%;
     background-color: #8bc34a;
 }
 
@@ -264,16 +264,20 @@
     color: black;
 }
 
-
-
-@media (max-width: 768px) {
+@media (max-width: 1214px) {
+    #middle{
+        margin:auto;
+        
+        display: flex;
+        flex-direction: column;
+    }
     .profile-box{
         flex-wrap: wrap;
         justify-content: center;
         width: min-content;
         margin: 0;
         margin-bottom: 15px;
-        width: 100%;
+        width: 800px;
     }
     #profile-text h2{
         text-align: center;
@@ -284,92 +288,161 @@
         display: flex;
         flex-direction: column;
     }
-
-    
     #name-br{
         display: none;
     }
-    #grid-lvl1{
+    #profile-text p{
+        margin-left: 25px;
+        margin-right: 25px;
+    }
+    #grid-lvl1-1{
         display: flex;
-        flex-direction: column;
-        
-        flex-wrap: wrap;
+        width: 100%;
     }
     .studies-box{
-        width:auto;
-        margin: 0%;
+        width: 393px;
+
         margin-bottom: 15px;
+        
     }
     .projects-box{
-        width:auto;
+        width:393px;
         
         margin-bottom: 15px;
     }
-
     #grid-lvl1-2{
         display: flex;
-        flex-direction: column;
-    }
-    .passions-box{
-        display: flex;
-        flex-direction: column;
-        width:auto;
-        height: auto;
-        margin: 0%;
-    }
-    .passions-box h2{
-        writing-mode:horizontal-tb;
-        font-size: 24px;
-        margin-bottom: 15px;
-    }
-    .passions-box img{
-        width: 40%;
-        height: auto;
-        margin-bottom: 15px;
-    }
-    .link-div{
-        width: auto;
-        color: black;
-    }
-
-    #grid-lvl2{
-        display: flex;
-        flex-direction: column;
-    }
-    .exp-box{
-        display: flex;
-        flex-direction: column  ;
-        width:auto;
-        height: auto;
-        margin: 0%;
-        margin-bottom: 15px;
-        
-    }
-    
-    #exp-images{
-        display: flex;
-        flex-direction: column  ;
         
         justify-content: center;
         align-items: center;
     }
-    
-    #exp-images img{
-        width: 70%;
+    .passions-box{
+        margin: 0px;
+        width:800px;
+        align-self: center;
+    }
+    #grid-lvl2{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .exp-box{
+        display: flex;
+        
+        width:800px;
+        
+        margin: 0%;
+        margin-bottom: 15px;
         
     }
-    
-    
     .langues-box{
         margin: 0%;
         width:auto;
         
     }
-    .language-bar{
+}
+
+@media (max-width: 768px) {
+    .profile-box {
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
+        margin: 0;
+        margin-bottom: 15px;
+    }
+
+    #profile-text h2 {
+        text-align: center;
+    }
+
+    #middle {
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #grid-lvl1 {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    #grid-lvl1-2 {
+        display: flex;
+        flex-direction: column;
+        width: 100%; /* Ensures the container itself takes up full width */
+        justify-content: space-between;
+    }
+
+    .studies-box, .projects-box {
+        width: 100%;
+        flex: 1 1 100%;
+        margin: 0 0 15px 0; /* Ensure no margin-right to prevent spacing issues */
+        box-sizing: border-box;
+    }
+
+    .passions-box {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        margin: 0%;
+    }
+
+    .passions-box h2 {
+        font-size: 24px;
+        margin-bottom: 15px;
+    }
+
+    .passions-box img {
+        width: 40%;
+        height: auto;
+        margin-bottom: 15px;
+    }
+
+    .link-div {
+        width: 100%; /* Ensure the links take up full width */
+        color: black;
+    }
+
+    #grid-lvl2 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .exp-box {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        margin: 0;
+        margin-bottom: 15px;
+    }
+
+    #exp-images {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #exp-images img {
+        width: 70%;
+    }
+
+    .langues-box {
+        margin: 0%;
+        width: 100%;
+    }
+
+    .language-bar {
         display: flex;
         height: 30px;
     }
-    
-    
 
+    .language-bar-fill {
+        line-height: 30px;
+    }
 }

@@ -82,7 +82,12 @@ p{
     margin-right: 2%;
     margin-left: 2%;
 }
-
+@media (max-width: 1250px) {
+    .middle{
+        width: auto;
+        flex-direction: column;    
+    }
+}
 @media (max-width: 768px) {
     .middle{
         width: 100%;
@@ -116,7 +121,7 @@ p{
     }
     .description-content img{
         height: auto;
-        width: 100%;
+        width: 60%;
         align-self: center;
         margin-bottom: 15px;
         
