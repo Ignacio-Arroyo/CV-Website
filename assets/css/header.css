@@ -158,6 +158,9 @@ main {
     .logo span{
         font-size: 20px;
     }
+    #out-when-mobile{
+        display: none;
+    }
 }
 
 
